@@ -20,7 +20,6 @@ Installation Steps
 ==================
 
 - review database settings
-- make virtual env
 - bootstrap
 - run buildout
 - start server
@@ -36,35 +35,28 @@ need to be adjusted::
     options.db_user = seletz
     options.db_pass = False
 
-virtualenv
-----------
-
-Make a virtualenv::
-
-    $ mkvirtualenv openerp-dev
-    $ workon openerp-dev
-    $ mkdir openerp-dev
-    $ cd openerp-dev
-    $ setvirtualenvproject
-
 bootstrap
 ---------
 
 Run `bootstrap.py`::
 
-    $ workon openerp-dev
     $ cd buildout
     $ python bootstrap.py
 
 This will run some time.
+
+run buildout
+------------
+
+Run `bin/buildout`::
+
+    $ bin/buildout
 
 Start server
 ------------
 
 Fire the server up::
 
-    $ workon openerp-dev
-    $ cd buildout
     $ bin/start_openerp
 
 
